@@ -35,11 +35,6 @@ public class ApiActivity extends AppCompatActivity implements View.OnClickListen
     JCVideoPlayer.JCAutoFullscreenListener mSensorEventListener;
     SensorManager mSensorManager;
 
-
-
-
-
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
