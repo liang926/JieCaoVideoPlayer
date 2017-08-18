@@ -814,7 +814,9 @@ public abstract class JCVideoPlayer extends FrameLayout implements View.OnClickL
             Constructor<JCVideoPlayer> constructor = (Constructor<JCVideoPlayer>) JCVideoPlayer.this.getClass().getConstructor(Context.class);
             JCVideoPlayer jcVideoPlayer = constructor.newInstance(getContext());
             jcVideoPlayer.setId(TINY_ID);
-            FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(400, 400);
+            //设置小视频的宽和高
+            FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(500, 500);
+            //小视频悬浮的位置
             lp.gravity = Gravity.RIGHT | Gravity.BOTTOM;
             vp.addView(jcVideoPlayer, lp);
             jcVideoPlayer.setUp(urlMap, currentUrlMapIndex, JCVideoPlayerStandard.SCREEN_WINDOW_TINY, objects);

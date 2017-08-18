@@ -19,6 +19,11 @@ import fm.jiecao.jiecaovideoplayer.CustomView.MyJCVideoPlayerStandard;
 /**
  * Created by Nathen on 16/7/22.
  */
+/**
+*
+* @author chenyongliang
+* @time 2017/8/18 下午3:39
+*/
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
@@ -30,8 +35,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        /**
+         *  VideoPlayer above is playing click me to tiny window
+         *  视频播放的时候，点击mTinyWindow按钮视频悬浮到屏幕的右下角
+         */
         mTinyWindow = (Button) findViewById(R.id.tiny_window);
+
         mAutoTinyWindow = (Button) findViewById(R.id.auto_tiny_window);
         mPlayDirectly = (Button) findViewById(R.id.play_directly_without_layout);
         mAboutListView = (Button) findViewById(R.id.about_listview);
@@ -81,6 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tiny_window:
+                //点击小视频悬浮到屏幕的右下角功能
                 myJCVideoPlayerStandard.startWindowTiny();
                 break;
             case R.id.auto_tiny_window:
