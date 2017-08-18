@@ -10,8 +10,6 @@ import android.widget.Button;
 
 import com.squareup.picasso.Picasso;
 
-import java.util.LinkedHashMap;
-
 import fm.jiecao.jcvideoplayer_lib.JCUserAction;
 import fm.jiecao.jcvideoplayer_lib.JCUserActionStandard;
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
@@ -75,7 +73,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tiny_window:
-//                myJCVideoPlayerStandard.onStatePreparingChangingUrl(1, 0);
                 myJCVideoPlayerStandard.startWindowTiny();
                 break;
             case R.id.auto_tiny_window:
